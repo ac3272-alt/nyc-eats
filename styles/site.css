@@ -1,0 +1,586 @@
+html {
+  background-color: #e8eef5;
+}
+
+body {
+  background-color: #fdf8f0;
+  color: #1a1f2e;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  block-size: auto;
+  border-radius: 10px;
+}
+
+header {
+  background-color: #1f4e79;
+  border-bottom: 2px solid #163a5c;
+}
+
+header section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.2em 1em 0.4em 1em;
+  gap: 0.75em;
+
+  border: none;
+  border-radius: 0;
+  background-color: #1f4e79;
+}
+
+header section img {
+  width: 56px;
+}
+
+header section a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75em;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: #fdf8f0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #163a5c;
+}
+
+nav li {
+  border-bottom: 1px solid #163a5c;
+}
+
+nav a {
+  display: block;
+  padding: 0.9em 1em;
+  color: #fdf8f0;
+  background-color: #1f4e79;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #b8c4d4;
+}
+
+nav a.current {
+  background-color: #fdf8f0;
+  color: #1f4e79;
+  font-weight: bold;
+}
+
+main {
+  padding: 1em;
+}
+
+section {
+  background-color: #fdf8f0;
+  border: 1px solid #b8c4d4;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 1px 4px rgba(31, 78, 121, 0.08);
+}
+
+article {
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 1px solid #dce8f0;
+}
+
+section article:first-of-type {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: none;
+}
+
+.heading-wide {
+  display: none;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: left;
+  color: #1f4e79;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.15em;
+  text-align: left;
+  color: #1a1f2e;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+cite {
+  font-style: normal;
+}
+
+a {
+  color: #1f4e79;
+}
+
+footer {
+  background-color: #1f4e79;
+  border-top: 2px solid #163a5c;
+  padding: 1em;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fdf8f0;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 0.75em;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  background-color: #dce8f0;
+  color: #1f4e79;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  border: 1px solid #b8c4d4;
+}
+
+.tags span {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  background-color: #dce8f0;
+  color: #1f4e79;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  border: 1px solid #b8c4d4;
+}
+
+#hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.6em 1em;
+  font-size: 2em;
+  color: #fdf8f0;
+  margin-left: auto;
+}
+
+#hamburger-button:hover {
+  color: #b8c4d4;
+}
+
+.modal-open-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+.modal-open-button img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.modal-open-button:hover img {
+  border: 2px solid #1f4e79;
+}
+
+.category-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #1f4e79;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: #1f4e79;
+}
+
+.category-button:hover {
+  color: #163a5c;
+}
+
+.neighborhood-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #1f4e79;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: #1f4e79;
+}
+
+.neighborhood-button:hover {
+  color: #163a5c;
+}
+
+.dish-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1em;
+  color: #1f4e79;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.dish-button:hover {
+  color: #163a5c;
+}
+
+#bom-modal,
+#howoo-modal,
+#torrisi-modal,
+#donangie-modal,
+#quique-modal,
+#taqueria-modal,
+#bangkok-modal,
+#soothr-modal,
+#bluefin-modal,
+#coldnoodles-modal,
+#hamplatter-modal,
+#flatbread-modal,
+#lobsterceviche-modal,
+#suadero-modal,
+#scallop-modal,
+#crabkaree-modal,
+#flatiron-modal,
+#eastvillage-modal,
+#lowereastside-modal,
+#williamsburg-modal,
+#latenight-modal,
+#cheapeats-modal,
+#groupdinner-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 30, 55, 0.65);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  background-color: #fdf8f0;
+  border: 1px solid #b8c4d4;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(31, 78, 121, 0.2);
+}
+
+.modal-container figure {
+  margin: 0;
+}
+
+.modal-container img {
+  border-radius: 0;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px solid #b8c4d4;
+  background-color: #1f4e79;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-title {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  color: #fdf8f0;
+}
+
+.modal-body {
+  padding: 1em;
+}
+
+#bom-modal-close,
+#howoo-modal-close,
+#torrisi-modal-close,
+#donangie-modal-close,
+#quique-modal-close,
+#taqueria-modal-close,
+#bangkok-modal-close,
+#soothr-modal-close,
+#bluefin-modal-close,
+#coldnoodles-modal-close,
+#hamplatter-modal-close,
+#flatbread-modal-close,
+#lobsterceviche-modal-close,
+#suadero-modal-close,
+#scallop-modal-close,
+#crabkaree-modal-close,
+#flatiron-modal-close,
+#eastvillage-modal-close,
+#lowereastside-modal-close,
+#williamsburg-modal-close,
+#latenight-modal-close,
+#cheapeats-modal-close,
+#groupdinner-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  color: #fdf8f0;
+  padding: 0.2em 0.4em;
+  line-height: 1;
+}
+
+#bom-modal-close:hover,
+#howoo-modal-close:hover,
+#torrisi-modal-close:hover,
+#donangie-modal-close:hover,
+#quique-modal-close:hover,
+#taqueria-modal-close:hover,
+#bangkok-modal-close:hover,
+#soothr-modal-close:hover,
+#bluefin-modal-close:hover,
+#coldnoodles-modal-close:hover,
+#hamplatter-modal-close:hover,
+#flatbread-modal-close:hover,
+#lobsterceviche-modal-close:hover,
+#suadero-modal-close:hover,
+#scallop-modal-close:hover,
+#crabkaree-modal-close:hover,
+#flatiron-modal-close:hover,
+#eastvillage-modal-close:hover,
+#lowereastside-modal-close:hover,
+#williamsburg-modal-close:hover,
+#latenight-modal-close:hover,
+#cheapeats-modal-close:hover,
+#groupdinner-modal-close:hover {
+  color: #b8c4d4;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.source-wide {
+  display: none;
+}
+
+.modal-label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 0.75em;
+  margin-bottom: 0.25em;
+  color: #1f4e79;
+}
+
+@media (min-width: 850px) {
+  nav ul {
+    border-top: none;
+  }
+
+  .article-intro {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: flex-start;
+  }
+
+  .article-intro .article-image {
+    flex-shrink: 0;
+    width: 40%;
+  }
+
+  .article-intro .article-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .source-narrow {
+    display: none;
+  }
+
+  .source-wide {
+    display: block;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header section {
+    flex-shrink: 0;
+    padding: 1.2em 1em 0.4em 1em;
+    align-self: center;
+  }
+
+  nav {
+    margin-left: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+    border-bottom: none;
+    border-left: none;
+  }
+
+  nav a {
+    background-color: transparent;
+  }
+
+  nav a.current {
+    background-color: transparent;
+    color: #fdf8f0;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #fdf8f0;
+  }
+
+  #hamburger-button {
+    display: none;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: flex-start;
+  }
+
+  article .article-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  article .article-image {
+    flex-shrink: 0;
+    width: 40%;
+  }
+
+  .heading-narrow {
+    display: none;
+  }
+
+  .heading-wide {
+    display: block;
+  }
+}
+
+@media (pointer: coarse) {
+  nav a {
+    padding: 1.2em 1em;
+  }
+
+  #hamburger-button {
+    padding: 0.8em 1em;
+  }
+
+  #bom-modal-close,
+  #howoo-modal-close,
+  #torrisi-modal-close,
+  #donangie-modal-close,
+  #quique-modal-close,
+  #taqueria-modal-close,
+  #bangkok-modal-close,
+  #soothr-modal-close,
+  #bluefin-modal-close,
+  #coldnoodles-modal-close,
+  #hamplatter-modal-close,
+  #flatbread-modal-close,
+  #lobsterceviche-modal-close,
+  #suadero-modal-close,
+  #scallop-modal-close,
+  #crabkaree-modal-close,
+  #flatiron-modal-close,
+  #eastvillage-modal-close,
+  #lowereastside-modal-close,
+  #williamsburg-modal-close,
+  #latenight-modal-close,
+  #cheapeats-modal-close,
+  #groupdinner-modal-close {
+    padding: 0.6em 0.8em;
+  }
+
+  .modal-open-button {
+    padding: 0;
+  }
+
+  .category-button {
+    padding: 0.4em 0;
+  }
+
+  .neighborhood-button {
+    padding: 0.4em 0;
+  }
+
+  .dish-button {
+    padding: 0.2em 0;
+  }
+}
